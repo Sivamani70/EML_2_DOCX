@@ -1,0 +1,9 @@
+[package]
+name = "eml_2_docx"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+docx-rs = "0.4.17"
+mailparse = "0.15.0"
+regex = "1.10.6"
