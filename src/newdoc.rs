@@ -482,63 +482,64 @@ impl NewDocx {
 }
 
 impl NewDocx {
-    const DARK_BLUE: &str = "#1D076D";
-    const RED: &str = "#FF0000";
-    const DEFAULT_BLACK: &str = "#000000";
+    const DARK_BLUE: &'static str = "#1D076D";
+    const RED: &'static str = "#FF0000";
+    const DEFAULT_BLACK: &'static str = "#000000";
 
     const HEADING_SIZE: usize = 36;
     const SIDE_HEAD_SIZE: usize = 28;
     const REGULAR_SIZE: usize = 22;
 
-    const HEADING: &str = "INCIDENT";
-    const SE_LINE: &str = "Please find the following initial analysis details.";
-    const MID_CELL: &str = ":\t";
+    const HEADING: &'static str = "INCIDENT";
+    const SE_LINE: &'static str = "Please find the following initial analysis details.";
+    const MID_CELL: &'static str = ":\t";
 
-    const M_DATE: &str = "1. Date";
-    const SUBJECT: &str = "2. Subject";
-    const SENDER: &str = "3. Sender Id";
-    const RECIPIENT: &str = "4. Recipient Id";
-    const DOMAIN: &str = "5. Domain";
-    const BLK_LIST: &str = "6. Blacklisted(Y/N)";
-    const EML_GTWY: &str = "7. Email Gateway";
-    const ATTACHMENTS: &str = "8. Attachments";
-    const A_MAL: &str = "9. Attachments (Malicious)";
-    const URL: &str = "10. URL(S)";
-    const URL_MAL: &str = "11. URL (Malicious)";
+    const M_DATE: &'static str = "1. Date";
+    const SUBJECT: &'static str = "2. Subject";
+    const SENDER: &'static str = "3. Sender Id";
+    const RECIPIENT: &'static str = "4. Recipient Id";
+    const DOMAIN: &'static str = "5. Domain";
+    const BLK_LIST: &'static str = "6. Blacklisted(Y/N)";
+    const EML_GTWY: &'static str = "7. Email Gateway";
+    const ATTACHMENTS: &'static str = "8. Attachments";
+    const A_MAL: &'static str = "9. Attachments (Malicious)";
+    const URL: &'static str = "10. URL(S)";
+    const URL_MAL: &'static str = "11. URL (Malicious)";
 
-    const REF: &str = "Ref: ";
-    const DOMAIN_ANALYSIS_HEAD: &str = "Domain Analysis";
-    const ANALYSIS_HEAD: &str = "Analysis";
-    const ANALYSIS_VEC: [&str; 2] = [
+    const REF: &'static str = "Ref: ";
+    const DOMAIN_ANALYSIS_HEAD: &'static str = "Domain Analysis";
+    const ANALYSIS_HEAD: &'static str = "Analysis";
+    const ANALYSIS_VEC: [&'static str; 2] = [
         "User received a mail from ",
         " which was detected as a ***-suspicious mail. As per the initial analysis we gathered that the mail came from ",
     ];
 
-    const URL_ATTACHMENTS: [&str; 2] = [
+    const URL_ATTACHMENTS: [&'static str; 2] = [
         "We also observed that there are *** URL(s) and ",
         " Attachment(s) in this email body.",
     ];
 
-    const DOMAIN_REP: &str = "The Domain is clean as per virus total, Kaspersky and URL void.";
-    const DOMAIN_REP_RES: [&str; 3] = [
+    const DOMAIN_REP: &'static str =
+        "The Domain is clean as per virus total, Kaspersky and URL void.";
+    const DOMAIN_REP_RES: [&'static str; 3] = [
         "https://www.urlvoid.com/scan/",
         "https://www.virustotal.com/gui/domain/",
         "https://talosintelligence.com/reputation_center/lookup?search=",
     ];
-    const VERDICT_HEAD: &str = "Security Team verdict";
-    const VERDICT_LINE: [&str; 3] = [
+    const VERDICT_HEAD: &'static str = "Security Team verdict";
+    const VERDICT_LINE: [&'static str; 3] = [
         "\tAs per our Analysis, we have reached a verdict that the attached email is ",
         "***** ",
         "Mail.",
     ];
-    const SCREEN_SHOT: &str = "Screenshots:";
+    const SCREEN_SHOT: &'static str = "Screenshots:";
 
-    const HEADERS: &str = "Mail - Headers";
-    const RETURN_PATH: &str = "Return-Path";
-    const CONTENT_TYPE: &str = "Content-Type";
-    const SPF: &str = "Received-Spf";
-    const AUTH_RESULTS: &str = "Authentication-Results";
-    const B_CTYPE: &str = "Body Content-Type";
+    const HEADERS: &'static str = "Mail - Headers";
+    const RETURN_PATH: &'static str = "Return-Path";
+    const CONTENT_TYPE: &'static str = "Content-Type";
+    const SPF: &'static str = "Received-Spf";
+    const AUTH_RESULTS: &'static str = "Authentication-Results";
+    const B_CTYPE: &'static str = "Body Content-Type";
 
-    const ANS_REPORT: &str = "As per the analysis we observed that, there is ******** Attached file is an html document and is trying to get the credentials of the user. Intention of the mail is credential harvesting.";
+    const ANS_REPORT: &'static str = "As per the analysis we observed that, there is ******** Attached file is an html document and is trying to get the credentials of the user. Intention of the mail is credential harvesting.";
 }
